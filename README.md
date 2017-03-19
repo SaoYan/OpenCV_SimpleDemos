@@ -1,5 +1,5 @@
 # OpenCV_ToyExamples
-The demos in this repository is with my public tutorials in my Wechat Public Account.
+The demos in this repository are with my public tutorials in my Wechat Public Account.
 Both the tutorials and demos are designed for OpenCV beginners. I hope you will have fun!
 
 To see the tutorials, go to
