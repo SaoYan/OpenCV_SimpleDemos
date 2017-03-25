@@ -19,8 +19,8 @@ public:
 
 private:
     float hranges[2] ;
-    const float* ranges[3] ;
-    int channels[3] ;
+    const float* ranges[1] ;
+    int channels[1] ;
     float threshold ;
     cv::MatND histogram ;
 };
