@@ -30,8 +30,14 @@ I provide one test image with the sample patch extracted from it. Be free to use
 You may find out that the outcome is very upsetting. We'll see the reason and try to modify it in [next tutorial](https://mp.weixin.qq.com/s?__biz=MzIxOTQ3MTI5NQ==&mid=2247483953&idx=1&sn=d733791678baaaa5dc910d41990db27c&scene=19#wechat_redirect).<br />(The corresponding demo will be 'V2')  
 **HistBackProject V2**  
 In this demo, HSV color space is used to improve the performance in V1.  
-The corresponding tutorial can be found [here](https://mp.weixin.qq.com/s?__biz=MzIxOTQ3MTI5NQ==&mid=2247483953&idx=1&sn=d733791678baaaa5dc910d41990db27c&scene=19#wechat_redirect).<br />
+The corresponding tutorial can be found [here](https://mp.weixin.qq.com/s?__biz=MzIxOTQ3MTI5NQ==&mid=2247483953&idx=1&sn=d733791678baaaa5dc910d41990db27c&scene=19#wechat_redirect).<br />  
+The result is shown below.  
+![github](https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HistBackProject%20V2/images/result.jpg "github")
+
 **HistBackProject V3**  
 This demo has the following modifications based on HistBackProject V2.
 1. Morphology operation is used to enhance the target object in the binary image.
-2. Extra contours and calculate bounding box.
+2. Extra contours and calculate bounding box.  
+The result is shown below.  
+![github](https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HistBackProject%20V3/images/result_binary.jpg "github")  
+![github](https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HistBackProject%20V3/images/result.jpg "github") 
