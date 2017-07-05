@@ -37,7 +37,8 @@ The result is shown below.
 **HistBackProject V3**  
 This demo has the following modifications based on HistBackProject V2.
 1. Morphology operation is used to enhance the target object in the binary image.
-2. Extra contours and calculate bounding box.
+2. Extra contours and calculate bounding box.  
+
 The result is shown below.  
 ![github](https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HistBackProject%20V3/images/result_binary.jpg "github")  
 ![github](https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HistBackProject%20V3/images/result.jpg "github") 
