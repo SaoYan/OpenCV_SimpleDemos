@@ -1,5 +1,5 @@
-INCLUDE = $(shell pkg-config opencv-3.3.0 --cflags)
-LIBS = $(shell pkg-config opencv-3.3.0 --libs)
+INCLUDE = $(shell pkg-config opencv-3. --cflags)
+LIBS = $(shell pkg-config opencv-3 --libs)
 
 all: opencv_exp
 

@@ -5,6 +5,26 @@ There are some tutorials for OpenCV beginners. TO see the tutorials, go to [here
 
 To follow my Public Account and see other tutorials, you can search Account name 'SaoYan' in Wechat.
 
+## Install OpenCV (with opencv_contrib)
+```
+git clone https://github.com/opencv/opencv
+git clone https://github.com/opencv/opencv_contrib
+cd opencv
+mkdir build
+cd build
+cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local/opencv -D OPENCV_EXTRA_MODULES_PATH=/home/USERNAME/opencv_contrib/modules/ ..
+sudo make -j8
+sudo make install
+```
+ATTENTION: remember to replace 'USERNAME' with you own user name.
+After installation, you need to do one more thing.
+```
+cd /usr/local/opencv/lib/pkgconfig
+sudo cp opencv.pc /usr/lib/pkgconfig
+cd /usr/lib/pkgconfig
+sudo mv opencv.pc opencv-3.pc
+```
+
 ## How to run the codes
 ```
 git clone https://github.com/SaoYan/OpenCV_ToyExamples
@@ -41,4 +61,4 @@ This demo has the following modifications based on HistBackProject V2.
 
 The result is shown below.  
 ![github](https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HistBackProject%20V3/images/result_binary.jpg "github")  
-![github](https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HistBackProject%20V3/images/result.jpg "github") 
+![github](https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HistBackProject%20V3/images/result.jpg "github")
