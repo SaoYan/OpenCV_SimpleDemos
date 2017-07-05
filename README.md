@@ -16,7 +16,7 @@ cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local/opencv -D O
 sudo make -j8
 sudo make install
 ```
-ATTENTION: remember to replace 'USERNAME' with you own user name.
+ATTENTION: remember to replace 'USERNAME' with you own user name.  
 After installation, you need to do one more thing.
 ```
 cd /usr/local/opencv/lib/pkgconfig
