@@ -3,14 +3,11 @@ Yiqi Yan(SaoYan)
 2017/3/18
 *************************************/
 
-#include <QCoreApplication>
 #include "colorhistogram.h"
 #include "contentfinder.h"
 
-int main(int argc, char *argv[])
+int main()
 {
-    QCoreApplication a(argc, argv);
-
     // parameters
     double th=0.05f; // threshold
 
@@ -19,11 +16,11 @@ int main(int argc, char *argv[])
     ContentFinder finder;
 
     // calculate histogram of the sample image
-    cv::Mat image_sample=cv::imread("sample.jpg");
+    cv::Mat image_sample=cv::imread("images/sample.jpg");
     hc.getHistogram(image_sample);
 
     //detect
-    cv::Mat image_test = cv::imread("test.jpg");
+    cv::Mat image_test = cv::imread("images/test.jpg");
     finder.setHistogram(hc.hist);
     finder.setThreshold(th);
     finder.find(image_test);
@@ -32,5 +29,6 @@ int main(int argc, char *argv[])
     cv::namedWindow("result");
     cv::imshow("result", finder.result);
 
-    return a.exec();
+    cv::waitKey();
+    return 0;
 }

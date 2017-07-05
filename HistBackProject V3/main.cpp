@@ -1,11 +1,8 @@
-#include <QCoreApplication>
 #include "colorhistogram.h"
 #include "contentfinder.h"
 
-int main(int argc, char *argv[])
+int main()
 {
-    QCoreApplication a(argc, argv);
-
     // 可定制参数
     double th=0.05f;     // 二值化阈值
     int minSaturation=100; // 饱和度阈值
@@ -17,16 +14,16 @@ int main(int argc, char *argv[])
     ContentFinder finder;
 
     // 计算样本图像直方图
-    cv::Mat image_sample=cv::imread("sample.jpg");
+    cv::Mat image_sample=cv::imread("images/sample.jpg");
     hc.getHueHistogram(image_sample, minSaturation);
 
     // 测试图像
-    cv::Mat image_test = cv::imread("test.jpg");
+    cv::Mat image_test = cv::imread("images/test.jpg");
     cv::namedWindow("image");
     cv::imshow("image",image_test);
 
     // 识别当前图像低饱和度像素
-    cv::vector <cv::Mat> v;
+    std::vector <cv::Mat> v;
     cv::Mat image_hsv;
     cv::cvtColor(image_test,image_hsv,CV_BGR2HSV);
     cv::split(image_hsv,v);  //v[1]是饱和度分量
@@ -80,6 +77,6 @@ int main(int argc, char *argv[])
     cv::namedWindow("detection");
     cv::imshow("detection",image_test);
 
-    return a.exec();
+    cv::waitKey(0);
+    return 0;
 }
-
