@@ -38,6 +38,10 @@ cd /OpenCV_ToyExamples/FeatureDetect
 make  
 ./opencv_exp
 ```
+## SURF & SIFT Feature Detect
+SURF feature & SIFT feature detector is included in opencv_contrib modules. Therefore, you may find the implementation quite different from other Opencv project.
+1. Remember to use the namespace cv::xfeatures2d rather than cv. Many other modules in opencv_contrib also have their own namespaces. Pay attention to this in other demos.
+2. In this implementation, we first define two structure, rather than use the Opencv class & function directly. The reason is that the corresponding classes are defined as abstract classes, thus cannot be used directly.
 
 ## Histogram Calculation
 

@@ -66,11 +66,12 @@ int main()
 	//detector(image, surf_keypoints, surf_descriptors);
 	surf_detector(image, surf_keypoints);
 
-	// Display SIFT Features
 	Mat imageForDraw;
+	// Display SIFT Features
 	drawKeypoints(image, sift_keypoints, imageForDraw, Scalar::all(255));
 	namedWindow("Show SIFT features");
 	imshow("Show SIFT features", imageForDraw);
+	cv::imwrite("SIFT.jpg", imageForDraw);
 
 	// Display SUFR Features
 	//clear
@@ -78,6 +79,7 @@ int main()
 	drawKeypoints(image, surf_keypoints, imageForDraw, Scalar::all(255));
 	namedWindow("Show SURF features");
 	imshow("Show SURF features", imageForDraw);
+	cv::imwrite("SURF.jpg", imageForDraw);
 
 	waitKey();
     return 0;
