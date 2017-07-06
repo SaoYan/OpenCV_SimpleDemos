@@ -51,7 +51,7 @@ You may find out that the outcome is very upsetting. We'll see the reason and tr
 **HistBackProject V2**  
 In this demo, HSV color space is used to improve the performance in V1.  
 The corresponding tutorial can be found [here](https://mp.weixin.qq.com/s?__biz=MzIxOTQ3MTI5NQ==&mid=2247483953&idx=1&sn=d733791678baaaa5dc910d41990db27c&scene=19#wechat_redirect).<br />
-The result is shown below.
+The result is shown below.  
 <img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HistBackProject%20V2/images/result.jpg" width="315" height="235" />
 
 **HistBackProject V3**  
@@ -62,3 +62,13 @@ This demo has the following modifications based on HistBackProject V2.
 The result is shown below.  
 <img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HistBackProject%20V3/images/result_binary.jpg" width="380" height="300" />
 <img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HistBackProject%20V3/images/result.jpg" width="380" height="300" />
+
+**HistBackProject V4**  
+This demo run Histogram Back-projection online, i.e. capture video frames via the camera on you computer and detect the target.  
+Follow the steps:
+1. Use your mouse to select the target region.
+2. When you are done with step 1, press 'Y' and watch the object detection result.
+3. Press 'Q' at any time to quit.
+
+Histogram Back-projection is not that powerful, so it is recommended to select a monochrome target region.  
+The PDF file is a summary I wrote. You can refer to it for more details.
