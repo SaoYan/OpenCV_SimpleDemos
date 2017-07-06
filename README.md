@@ -52,7 +52,7 @@ detection result (figure #1: SURF, figure #2: SIFT):
 **HistCal**  
 This demo calculate & display the histogram of the input image.  
 figure #1: input image, figure #2-4: histogram of channel R, G, B, respectively.  
-<img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HistCal/test.jpg" />
+<img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HistCal/test.jpg" />  
 <img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HistCal/R.jpg" />
 <img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HistCal/G.jpg" />
 <img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HistCal/B.jpg" />
