@@ -72,3 +72,10 @@ Follow the steps:
 
 Histogram Back-projection is not that powerful, so it is recommended to select a monochrome target region.  
 The PDF file is a summary I wrote. You can refer to it for more details.
+
+## Pedestrian Detection
+**HogPedestrianDetection**  
+This is a fairly simple demo. The result is shown below.  
+<img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HogPedestrianDetection/images/result1.jpg" />
+<img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HogPedestrianDetection/images/result2.jpg" />
+<img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HogPedestrianDetection/images/result3.jpg" />
