@@ -7,14 +7,14 @@
 
 int main()
 {
-    cv::Mat image = cv::imread("images/1.jpg");
+    cv::Mat image = cv::imread("images/3.jpg");
     cv::namedWindow("Original Image");
     cv::imshow("Original Image",image);
 
     std::vector<cv::Rect> locations;
     cv::HOGDescriptor hog;
     hog.setSVMDetector(cv::HOGDescriptor::getDefaultPeopleDetector());
-    cv::GaussianBlur(image,image,cv::Size(3,3),5);
+    //cv::GaussianBlur(image,image,cv::Size(3,3),5);
     hog.detectMultiScale(image,locations);
 
     cv::Mat result = image.clone();
@@ -23,8 +23,10 @@ int main()
         cv::rectangle(result,locations.at(i),
                       cv::Scalar(0,0,255),2);
     }
+
     cv::namedWindow("Detected Objects");
     cv::imshow("Detected Objects",result);
+    cv::imwrite("result.jpg", result);
     std::cout << "Number of detections:" << locations.size() << std::endl;
 
     cv::waitKey();
