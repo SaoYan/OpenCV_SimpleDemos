@@ -42,13 +42,13 @@ make
 Some of the demos may need extra parameters from the command line. Refer to the following descriptions for details.
 
 ## Calculate image convolution using DFT
-**DFT**  
+[DFT](https://github.com/SaoYan/OpenCV_SimpleDemos/tree/master/DFT)   
 Convolution can be efficiently calculated in frequency domain. In fact, all OpenCV Image Filter API perform their calculations this way.  
 In this demo I implement this myself. The result may not be exactly the same as what you get when you use Image Filter API directly, because OpenCV has some extra operations.  
 You need some basic knowledge of DSP in order to understand the code.
 
 ## SURF & SIFT Feature Detect
-**FeatureDetect**  
+[FeatureDetect](https://github.com/SaoYan/OpenCV_SimpleDemos/tree/master/FeatureDetect)  
 SURF feature & SIFT feature detector is included in opencv_contrib modules. Therefore, you may find the implementation quite different from other Opencv project.
 1. Remember to use the namespace cv::xfeatures2d rather than cv. Many other modules in opencv_contrib also have their own namespaces. Pay attention to this in other demos.
 2. In this implementation, we first define two structure, rather than use the Opencv class & function directly. The reason is that the corresponding classes are defined as abstract classes, thus cannot be used directly.
@@ -58,7 +58,7 @@ detection result (figure #1: SURF, figure #2: SIFT):
 <img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/FeatureDetect/SIFT.jpg" />
 
 ## Histogram Calculation
-**HistCal**  
+[HistCal](https://github.com/SaoYan/OpenCV_SimpleDemos/tree/master/HistCal)   
 This demo calculate & display the histogram of the input image.  
 figure #1: input image, figure #2-4: histogram of channel R, G, B, respectively.  
 <img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HistCal/test.jpg" />  
@@ -67,18 +67,19 @@ figure #1: input image, figure #2-4: histogram of channel R, G, B, respectively.
 <img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HistCal/B.jpg" />
 
 ## Histogram Back-projection
-**HistBackProject V1**  
+[HistBackProject V1](https://github.com/SaoYan/OpenCV_SimpleDemos/tree/master/HistBackProject%20V1)   
 This demo is a simple use of histogram backprojection to detect an monochromatic (or nealy monochromatic) object.
 The corresponding tutorial can be found [here](https://mp.weixin.qq.com/s?__biz=MzIxOTQ3MTI5NQ==&mid=2247483949&idx=1&sn=636cd5077c1749a5dfdaa3e6de14af74&scene=19#wechat_redirect).<br />
 I provide one test image with the sample patch extracted from it. Be free to use you own test images! You may be wondering how to use you camera to run histogram back-projection online. We'll see how to do this in the following demos (refer to V4).  
 You may find out that the outcome is very upsetting. We'll see the reason and try to modify it in [next tutorial](https://mp.weixin.qq.com/s?__biz=MzIxOTQ3MTI5NQ==&mid=2247483953&idx=1&sn=d733791678baaaa5dc910d41990db27c&scene=19#wechat_redirect).<br />(The corresponding demo will be 'V2')  
-**HistBackProject V2**  
+
+[HistBackProject V2](https://github.com/SaoYan/OpenCV_SimpleDemos/tree/master/HistBackProject%20V2)  
 In this demo, HSV color space is used to improve the performance in V1.  
 The corresponding tutorial can be found [here](https://mp.weixin.qq.com/s?__biz=MzIxOTQ3MTI5NQ==&mid=2247483953&idx=1&sn=d733791678baaaa5dc910d41990db27c&scene=19#wechat_redirect).<br />
 The result is shown below.  
 <img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HistBackProject%20V2/images/result.jpg" width="315" height="235" />
 
-**HistBackProject V3**  
+[HistBackProject V3](https://github.com/SaoYan/OpenCV_SimpleDemos/tree/master/HistBackProject%20V3)  
 This demo has the following modifications based on HistBackProject V2.
 1. Morphology operation is used to enhance the target object in the binary image.
 2. Extra contours and calculate bounding box.  
@@ -87,7 +88,7 @@ The result is shown below.
 <img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HistBackProject%20V3/images/result_binary.jpg" width="380" height="300" />
 <img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HistBackProject%20V3/images/result.jpg" width="380" height="300" />
 
-**HistBackProject V4**  
+[HistBackProject V4](https://github.com/SaoYan/OpenCV_SimpleDemos/tree/master/HistBackProject%20V4)    
 This demo run Histogram Back-projection online, i.e. capture video frames via the camera on you computer and detect the target.  
 Follow the steps:
 1. Use your mouse to select the target region.
@@ -98,13 +99,14 @@ Histogram Back-projection is not that powerful, so it is recommended to select a
 The PDF file is a summary I wrote. You can refer to it for more details.
 
 ## Pedestrian Detection
-**HogPedestrianDetection**  
+[HogPedestrianDetection](https://github.com/SaoYan/OpenCV_SimpleDemos/tree/master/HogPedestrianDetection)
 This is a fairly simple demo. The result is shown below.  
 <img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HogPedestrianDetection/images/result1.jpg" />
 <img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HogPedestrianDetection/images/result2.jpg" />
 <img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HogPedestrianDetection/images/result3.jpg" />
 
 ## Object Tracking
+[Tracking](https://github.com/SaoYan/OpenCV_SimpleDemos/tree/master/Tracking)  
 There are 5 tracking algorithms in OpenCV Tracking API. You can select one via command line parameters.  
 **Running this demo needs extra parameters from the command line:**  
 ```
