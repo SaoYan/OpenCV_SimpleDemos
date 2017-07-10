@@ -48,8 +48,8 @@ In this demo I implement this myself. The result may not be exactly the same as 
 You need some basic knowledge of DSP in order to understand the code.  
 The result is shown below:  
 figure #1: original image; figure #2: convolution result  
-<img src="https://github.com/SaoYan/OpenCV_SimpleDemos/blob/master/DFT/test.jpg" />
-<img src="https://github.com/SaoYan/OpenCV_SimpleDemos/blob/master/DFT/result.jpg" />
+<img src="https://github.com/SaoYan/OpenCV_SimpleDemos/blob/master/DFT/test.jpg" width="300" height="300" />
+<img src="https://github.com/SaoYan/OpenCV_SimpleDemos/blob/master/DFT/result.jpg" width="300" height="300" />
 
 ## SURF & SIFT Feature Detect
 [FeatureDetect](https://github.com/SaoYan/OpenCV_SimpleDemos/tree/master/FeatureDetect)  
