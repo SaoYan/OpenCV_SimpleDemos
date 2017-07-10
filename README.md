@@ -38,8 +38,14 @@ cd /OpenCV_ToyExamples/FeatureDetect
 make  
 ./opencv_exp
 ```
-**ATTENTION**
+**ATTENTION**  
 Some of the demos may need extra parameters from the command line. Refer to the following descriptions for details.
+
+## Calculate image convolution using DFT
+**DFT**  
+Convolution can be efficiently calculated in frequency domain. In fact, all OpenCV Image Filter API perform their calculations this way.  
+In this demo I implement this myself. The result may not be exactly the same as what you get when you use Image Filter API directly, because OpenCV has some extra operations.  
+You need some basic knowledge of DSP in order to understand the code.
 
 ## SURF & SIFT Feature Detect
 **FeatureDetect**  
