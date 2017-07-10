@@ -121,6 +121,7 @@ This is a fairly simple demo. The result is shown below.
 <img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HogPedestrianDetection/images/result3.jpg" />
 
 ## LSD Line Segment Detector
+[LSD](https://github.com/SaoYan/OpenCV_SimpleDemos/tree/master/LSD)   
 LSD is an algorithm proposed in this [IEEE paper](http://ieeexplore.ieee.org/document/4731268/).  
 This algorithm is powerful, but sometimes too 'powerful' to eliminate tiny line elements in an image.  This problem is shown below.  
 <img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/LSD/result.jpg" />  
