@@ -16,7 +16,7 @@ cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local/opencv -D O
 sudo make -j8
 sudo make install
 ```
-ATTENTION: remember to replace 'USERNAME' with you own user name.  
+**ATTENTION**: remember to replace 'USERNAME' with you own user name.  
 After installation, you need to do one more thing.
 ```
 cd /usr/local/opencv/lib/pkgconfig
@@ -27,7 +27,7 @@ sudo mv opencv.pc opencv-3.pc
 
 ## How to run the codes
 ```
-git clone https://github.com/SaoYan/OpenCV_ToyExamples
+git clone https://github.com/SaoYan/OpenCV_SimpleDemos
 cd path/to/the/codes
 make  
 ./opencv_exp
@@ -38,6 +38,9 @@ cd /OpenCV_ToyExamples/FeatureDetect
 make  
 ./opencv_exp
 ```
+**ATTENTION**
+Some of the demos may need extra parameters from the command line. Refer to the following descriptions for details.
+
 ## SURF & SIFT Feature Detect
 **FeatureDetect**  
 SURF feature & SIFT feature detector is included in opencv_contrib modules. Therefore, you may find the implementation quite different from other Opencv project.
@@ -94,3 +97,19 @@ This is a fairly simple demo. The result is shown below.
 <img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HogPedestrianDetection/images/result1.jpg" />
 <img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HogPedestrianDetection/images/result2.jpg" />
 <img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HogPedestrianDetection/images/result3.jpg" />
+
+## Object Tracking
+There are 5 tracking algorithms in OpenCV Tracking API. You can select one via command line parameters.  
+**Running this demo needs extra parameters from the command line:**  
+```
+./opencv_exp trackerName {-vid | -img} { <video filename> | <dir name>
+```
+For example  
+**to use video file:**
+```
+./opencv_exp KCF -vid test.mp4
+```
+**to use image sequence:**
+```
+./opencv_exp KCF -img test
+```
