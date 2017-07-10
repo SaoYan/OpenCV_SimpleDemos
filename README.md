@@ -58,8 +58,8 @@ SURF feature & SIFT feature detector is included in opencv_contrib modules. Ther
 2. In this implementation, we first define two structure, rather than use the Opencv class & function directly. The reason is that the corresponding classes are defined as abstract classes, thus cannot be used directly.
 
 detection result (figure #1: SURF, figure #2: SIFT):  
-<img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/FeatureDetect/SURF.jpg" />
-<img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/FeatureDetect/SIFT.jpg" />
+<img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/FeatureDetect/SURF.jpg" width="320" height="240" />
+<img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/FeatureDetect/SIFT.jpg" width="320" height="240" />
 
 ## Histogram Calculation
 [HistCal](https://github.com/SaoYan/OpenCV_SimpleDemos/tree/master/HistCal)   
