@@ -69,8 +69,8 @@ Remember the Fill tool in Windows Paint Application? It can paint a connected re
 
 Figure #2 is created based on Flood Fill algorithm. The API in OpenCV also returns a mask which indicates the painted region.  
  <img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/FloodFill/FloodFillMask.jpg" width="288" height="162" />  
- 
- Please refer to the code and OpenCV documents for more details.
+
+Please refer to the code and OpenCV documents for more details.
 
 ## Histogram Calculation
 [HistCal](https://github.com/SaoYan/OpenCV_SimpleDemos/tree/master/HistCal)   
