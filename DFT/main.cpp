@@ -41,12 +41,14 @@ int main()
                   imageA.cols + imageB.cols -1,
                   dft_result.type());
     result = dft_result(cv::Rect(0,0,result.cols, result.rows));
-    cv::normalize(result, result, 0, 1, cv::NORM_MINMAX);
+    cv::normalize(result, result, 0, 255, cv::NORM_MINMAX);
+    result.convertTo(result, CV_8U);
 
     cv::namedWindow("Image");
     cv::imshow("Image", imageA);
     cv::namedWindow("Filter Result");
     cv::imshow("Filter Result",result);
+    //cv::imwrite("result.jpg",result);
 
     cv::waitKey(0);
     return 0;
