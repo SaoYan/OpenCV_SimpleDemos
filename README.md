@@ -105,11 +105,11 @@ There are 5 tracking algorithms in OpenCV Tracking API. You can select one via c
 ./opencv_exp trackerName {-vid | -img} { <video filename> | <dir name>
 ```
 For example  
-**to use video file:**
+**to use KCF tracker & video file:**
 ```
 ./opencv_exp KCF -vid test.mp4
 ```
-**to use image sequence:**
+**to use KCF tracker & image sequence:**
 ```
 ./opencv_exp KCF -img test
 ```
