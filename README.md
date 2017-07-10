@@ -104,6 +104,15 @@ There are 5 tracking algorithms in OpenCV Tracking API. You can select one via c
 ```
 ./opencv_exp trackerName {-vid | -img} { <video filename> | <dir name>
 ```
+The parameter 'trackerName' can be one of the following:
+<ul>
+<li> Boosting</li>
+<li> KCF</li>
+<li> MedianFlow</li>
+<li> MIL</li>
+<li> TLD</li>
+</ul>
+
 For example  
 **to use KCF tracker & video file:**
 ```
