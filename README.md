@@ -121,12 +121,12 @@ This is a fairly simple demo. The result is shown below.
 <img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/HogPedestrianDetection/images/result3.jpg" />
 
 ## LSD Line Segment Detector
-LSD is an algorithm proposed in an [IEEE paper](http://ieeexplore.ieee.org/document/4731268/).  
+LSD is an algorithm proposed in this [IEEE paper](http://ieeexplore.ieee.org/document/4731268/).  
 This algorithm is powerful, but sometimes too 'powerful' to eliminate tiny line elements in an image.  This problem is shown below.  
 <img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/LSD/result.jpg" />  
 
 In this demo, I filter the detection result by eliminating lines whose length are less than the threshold. When setting threshold to be 30, the result looks much better.  
-<img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/LSD/result_filtered.jpg" /> 
+<img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/LSD/result_filtered.jpg" />
 
 ## Object Tracking
 [Tracking](https://github.com/SaoYan/OpenCV_SimpleDemos/tree/master/Tracking)  
