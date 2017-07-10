@@ -61,6 +61,15 @@ detection result (figure #1: SURF, figure #2: SIFT):
 <img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/FeatureDetect/SURF.jpg" width="320" height="240" />
 <img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/FeatureDetect/SIFT.jpg" width="320" height="240" />
 
+## Flood Fill algorithm
+[FloodFill](https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/FloodFill)  
+Remember the Fill tool in Windows Paint Application? It can paint a connected region in the image with one color. This looks like:  
+ <img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/FloodFill/test.jpg" width="288" height="162" />
+ <img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/FloodFill/FloodFill.jpg" width="288" height="162" />
+
+Figure #2 is created based on Flood Fill algorithm. The API in OpenCV also returns a mask which indicates the painted region.  
+ <img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/FloodFill/FloodFillMask.jpg" width="288" height="162" />
+
 ## Histogram Calculation
 [HistCal](https://github.com/SaoYan/OpenCV_SimpleDemos/tree/master/HistCal)   
 This demo calculate & display the histogram of the input image.  
