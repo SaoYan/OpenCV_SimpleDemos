@@ -31,15 +31,30 @@ cmake -D CMAKE_BUILD_TYPE=Release \
       -D WITH_OPENGL=ON ..
 sudo make -j8
 sudo make install
-sudo ldconfig
 ```
 **ATTENTION**: remember to replace 'USERNAME' with you own user name.  
-After installation, you need to do one more thing.
+After installation, you need to do two more things.
+1. add pkgconfig
 ```
 cd /usr/local/opencv/lib/pkgconfig
 sudo cp opencv.pc /usr/lib/pkgconfig
 cd /usr/lib/pkgconfig
 sudo mv opencv.pc opencv-3.pc
+sudo ldconfig
+```
+2. add OpenCV to python path  
+
+In order to use the python API, you have to add the parent directory of "cv2.so" to python path. If you install OpenCV following the above instruction, it will be install to "/usr/local/opencv", and the directory to be add to path should be "/usr/local/opencv/lib/python2.7/dist-packages/".
+```
+sudo vi ~/.bashrc
+```
+Add the following contents:
+```
+export PYTHONPATH=/usr/local/opencv/lib/python2.7/dist-packages:$PYTHONPATH
+```
+Then update the environment variables:
+```
+source ~/.bashrc
 ```
 
 ## How to run the codes
