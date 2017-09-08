@@ -1,7 +1,7 @@
 # OpenCV_ToyExamples
 Here are some simple demos to help you explore OpenCV. I hope you will have fun!
 
-There are some tutorials for OpenCV beginners. To see the tutorials, go to [here](http://mp.weixin.qq.com/mp/homepage?__biz=MzIxOTQ3MTI5NQ==&hid=9&sn=bc002ded707c2c4610a44d446b1b95a4#wechat_redirect).<br />
+There are some tutorials for OpenCV beginners. To see the tutorials, go to [here](http://mp.weixin.qq.com/mp/homepage?__biz=MzIxOTQ3MTI5NQ==&hid=11&sn=a972be0cf5056ec2e44bc773bb58032c#wechat_redirect).<br />
 
 To follow my Public Account and see other tutorials, you can search Account name 'SaoYan' in Wechat.
 
