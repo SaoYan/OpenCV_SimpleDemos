@@ -5,53 +5,50 @@ There are some tutorials for OpenCV beginners. To see the tutorials, go to [here
 
 To follow my Public Account and see other tutorials, you can search Account name 'SaoYan' in Wechat.
 
-## Install OpenCV (with opencv_contrib, python and GPU support)
+## Install OpenCV (with opencv_contrib, python3 and GPU support)
+1. Install prerequisites
 ```
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install build-essential cmake git pkg-config
-sudo apt-get install python-dev python-numpy
-git clone https://github.com/opencv/opencv
-git clone https://github.com/opencv/opencv_contrib
+sudo apt-get install libjpeg8-dev libjasper-dev libpng12-dev
+sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+sudo apt-get install libgtk2.0-dev
+sudo apt-get install libatlas-base-dev gfortran
+```
+2. Pull down opencv and opencv_contrib from Github
+```
+git clone https://github.com/opencv/opencv.git
+git clone https://github.com/opencv/opencv_contrib.git
 cd opencv
 mkdir build
 cd build
 cmake -D CMAKE_BUILD_TYPE=Release \
-      -D CMAKE_INSTALL_PREFIX=/usr/local/opencv \
-      -D OPENCV_EXTRA_MODULES_PATH=/home/USERNAME/opencv_contrib/modules \
-      -D INSTALL_C_EXAMPLES=ON \
-      -D INSTALL_PYTHON_EXAMPLES=ON \
-      -D BUILD_NEW_PYTHON_SUPPORT=ON \
-      -D BUILD_EXAMPLES=ON \
+      -D CMAKE_INSTALL_PREFIX=/usr/local \
+      -D OPENCV_EXTRA_MODULES_PATH=PATH \
+      -D BUILD_opencv_python3=Yes
+      -D WITH_CUDA=ON \
+      -D WITH_CUBLAS=1 \
       -D WITH_TBB=ON \
       -D ENABLE_FAST_MATH=1 \
       -D CUDA_FAST_MATH=1 \
-      -D WITH_CUBLAS=1 \
-      -D WITH_NVCUVID=ON \
       -D WITH_OPENGL=ON ..
-sudo make -j8
+make -j32
 sudo make install
 ```
-**ATTENTION**: remember to replace 'USERNAME' with you own user name.  
-After installation, you need to do two more things.
-1. add pkgconfig
+**ATTENTION**: remember to replace 'PATH' with the correct path of ***opencv_contrib/modules***.  
+3. add pkgconfig
 ```
-cd /usr/local/opencv/lib/pkgconfig
-sudo cp opencv.pc /usr/lib/pkgconfig
-cd /usr/lib/pkgconfig
-sudo mv opencv.pc opencv-3.pc
 sudo ldconfig
 ```
-2. add OpenCV to python path  
-
-In order to use the python API, you have to add the parent directory of "cv2.so" to python path. If you install OpenCV following the above instruction, it will be install to "/usr/local/opencv", and the directory to be add to path should be "/usr/local/opencv/lib/python2.7/dist-packages/".
+4. add OpenCV to python path  
+In order to use the python API, you have to add the parent directory of "cv2.so" to python path.
 ```
 sudo vi ~/.bashrc
 ```
 Add the following contents:
-```
-export PYTHONPATH=/usr/local/opencv/lib/python2.7/dist-packages:$PYTHONPATH
-```
+> export PYTHONPATH=/usr/local/opencv/lib/python2.7/dist-packages:$PYTHONPATH
+
 Then update the environment variables:
 ```
 source ~/.bashrc
