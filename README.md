@@ -36,11 +36,13 @@ cmake -D CMAKE_BUILD_TYPE=Release \
 make -j32
 sudo make install
 ```
-**ATTENTION**: remember to replace 'PATH' with the correct path of ***opencv_contrib/modules***.  
+**ATTENTION**: remember to replace 'PATH' with the correct path of ***opencv_contrib/modules***.
+
 3. add pkgconfig
 ```
 sudo ldconfig
 ```
+
 4. add OpenCV to python path  
 In order to use the python API, you have to add the parent directory of "cv2.so" to python path.
 ```
