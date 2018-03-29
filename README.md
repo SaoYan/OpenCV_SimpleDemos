@@ -3,7 +3,8 @@ Here are some simple demos to help you explore OpenCV. I hope you will have fun!
 
 There are some tutorials for OpenCV beginners. To see the tutorials, go to [here](http://mp.weixin.qq.com/mp/homepage?__biz=MzIxOTQ3MTI5NQ==&hid=11&sn=a972be0cf5056ec2e44bc773bb58032c&scene=18#wechat_redirect).<br />
 
-Want to follow my Public Account and see other tutorials? Scan the QR Code:
+Want to follow my Public Account and see other tutorials? Scan the QR Code:  
+
 <img src="https://github.com/SaoYan/OpenCV_ToyExamples/blob/master/public-account.jpg" />
 
 ## Install OpenCV (with opencv_contrib, python3 and GPU support)
