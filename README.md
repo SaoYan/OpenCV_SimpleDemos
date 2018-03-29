@@ -33,7 +33,7 @@ cmake -D CMAKE_BUILD_TYPE=Release \
       -D ENABLE_FAST_MATH=1 \
       -D CUDA_FAST_MATH=1 \
       -D WITH_OPENGL=ON ..
-make -j32
+make -j64
 sudo make install
 ```
 **ATTENTION**: remember to replace 'PATH' with the correct path of ***opencv_contrib/modules***.
@@ -43,7 +43,7 @@ sudo make install
 sudo ldconfig
 ```
 
-4. add OpenCV to python path  
+<!-- 4. add OpenCV to python path  
 In order to use the python API, you have to add the parent directory of "cv2.so" to python path.
 ```
 sudo vi ~/.bashrc
@@ -54,7 +54,7 @@ Add the following contents:
 Then update the environment variables:
 ```
 source ~/.bashrc
-```
+``` -->
 
 ## How to run the codes
 ```
