@@ -26,7 +26,7 @@ cd build
 cmake -D CMAKE_BUILD_TYPE=Release \
       -D CMAKE_INSTALL_PREFIX=/usr/local \
       -D OPENCV_EXTRA_MODULES_PATH=PATH \
-      -D BUILD_opencv_python3=Yes
+      -D BUILD_opencv_python3=Yes \
       -D WITH_CUDA=ON \
       -D WITH_CUBLAS=1 \
       -D WITH_TBB=ON \
