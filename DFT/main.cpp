@@ -5,7 +5,7 @@
 int main()
 {
     cv::Mat imageA = cv::imread("test.jpg");
-    cv::cvtColor(imageA, imageA, CV_BGR2GRAY);
+    cv::cvtColor(imageA, imageA, cv::COLOR_BGR2GRAY);
 
     // get the filter kernel
     cv::Mat imageBx, imageBy;
