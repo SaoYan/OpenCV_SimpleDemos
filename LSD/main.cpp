@@ -9,7 +9,7 @@ int main()
 	cv::imshow("Original Image", image);
 
 	cv::Mat grayI, result, result_filtered;
-	cv::cvtColor(image, grayI, CV_BGR2GRAY);
+	cv::cvtColor(image, grayI, cv::COLOR_BGR2GRAY);
 	result = image.clone();
 	result_filtered = image.clone();
 	std::vector<cv::Vec4f> lines;
