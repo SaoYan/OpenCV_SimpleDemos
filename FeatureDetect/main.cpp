@@ -50,7 +50,7 @@ int main()
 {
 	// Load Image
 	Mat image = imread("test.jpg");
-	cvtColor(image,image,CV_BGR2GRAY);
+	cvtColor(image,image, cv::COLOR_BGR2GRAY);
 
 	// Detector SIFT Features
 	SIFTDetector sift_detector;

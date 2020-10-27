@@ -63,7 +63,7 @@ int main()
         // 识别当前图像低饱和度像素
         std::vector <cv::Mat> v;
         cv::Mat image_hsv;
-        cv::cvtColor(frame,image_hsv,CV_BGR2HSV);
+        cv::cvtColor(frame,image_hsv,cv::COLOR_BGR2HSV);
         cv::split(image_hsv,v);  //v[1]是饱和度分量
         cv::threshold(v[1],v[1],minSaturation,255,cv::THRESH_BINARY);
 
@@ -86,8 +86,8 @@ int main()
             image_detect = finder.result.clone();
             std::vector< std::vector<cv::Point> > contours;
             cv::findContours(image_detect,contours,
-                             CV_RETR_EXTERNAL,
-                             CV_CHAIN_APPROX_NONE);
+                             cv::RETR_EXTERNAL,
+                             cv::CHAIN_APPROX_NONE);
              // 提取包围盒
              std::vector<cv::Rect> boundRect =
                      std::vector<cv::Rect>(contours.size());
@@ -149,18 +149,18 @@ void mouseHandler(int event, int x, int y, int flags, void *param)
 {
     switch (event)
     {
-    case CV_EVENT_MOUSEMOVE:
+    case cv::EVENT_MOUSEMOVE:
         if (drawing_box)
         {
             box.width = x - box.x;
             box.height = y - box.y;
         }
         break;
-    case CV_EVENT_LBUTTONDOWN:
+    case cv::EVENT_LBUTTONDOWN:
         drawing_box = true;
         box = cv::Rect(x, y, 0, 0);
         break;
-    case CV_EVENT_LBUTTONUP:
+    case cv::EVENT_LBUTTONUP:
         drawing_box = false;
         if (box.width < 0)
         {

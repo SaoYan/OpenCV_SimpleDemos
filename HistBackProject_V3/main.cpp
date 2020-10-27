@@ -25,7 +25,7 @@ int main()
     // 识别当前图像低饱和度像素
     std::vector <cv::Mat> v;
     cv::Mat image_hsv;
-    cv::cvtColor(image_test,image_hsv,CV_BGR2HSV);
+    cv::cvtColor(image_test,image_hsv,cv::COLOR_BGR2HSV);
     cv::split(image_hsv,v);  //v[1]是饱和度分量
     cv::threshold(v[1],v[1],minSaturation,255,cv::THRESH_BINARY);
 
@@ -45,8 +45,8 @@ int main()
     cv::Mat image_detect = finder.result.clone();
     std::vector< std::vector<cv::Point> > contours;
     cv::findContours(image_detect,contours,
-                     CV_RETR_EXTERNAL,
-                     CV_CHAIN_APPROX_NONE);
+                     cv::RETR_EXTERNAL,
+                     cv::CHAIN_APPROX_NONE);
 
     // 提取包围盒
     std::vector<cv::Rect> boundRect =
