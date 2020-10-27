@@ -22,7 +22,7 @@ int main()
 
     // 识别当前图像低饱和度像素
     std::vector <cv::Mat> v;
-    cv::cvtColor(image_test,image_test,CV_BGR2HSV);
+    cv::cvtColor(image_test,image_test,cv::COLOR_BGR2HSV);
     cv::split(image_test,v);  //v[1]是饱和度分量
     cv::threshold(v[1],v[1],minSaturation,255,cv::THRESH_BINARY);
 

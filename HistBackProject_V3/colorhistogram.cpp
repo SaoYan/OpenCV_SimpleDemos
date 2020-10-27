@@ -14,7 +14,7 @@ void ColorHistogram::getHueHistogram(const cv::Mat &image,
 {
     // 转换到HSV空间
     cv::Mat hsv;
-    cv::cvtColor(image,hsv,CV_BGR2HSV);
+    cv::cvtColor(image,hsv,cv::COLOR_BGR2HSV);
 
     // 创建掩码矩阵，标出低饱和度像素（S通道像素值<minSaturation）
     cv::Mat mask;

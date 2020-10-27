@@ -176,18 +176,18 @@ void mouseHandler(int event, int x, int y, int flags, void *param)
 {
     switch (event)
     {
-    case CV_EVENT_MOUSEMOVE:
+    case cv::EVENT_MOUSEMOVE:
         if (drawing_box)
         {
             box.width = x - box.x;
             box.height = y - box.y;
         }
         break;
-    case CV_EVENT_LBUTTONDOWN:
+    case cv::EVENT_LBUTTONDOWN:
         drawing_box = true;
         box = cv::Rect(x, y, 0, 0);
         break;
-    case CV_EVENT_LBUTTONUP:
+    case cv::EVENT_LBUTTONUP:
         drawing_box = false;
         if (box.width < 0)
         {

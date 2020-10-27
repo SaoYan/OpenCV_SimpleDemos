@@ -33,7 +33,7 @@ void myMouseEvent(int event, int x, int y, int flags, void *param)
     cv::Mat Mask = cv::Mat(image.rows+2, image.cols+2,
                            CV_8UC1, cv::Scalar::all(0));
 
-    if (event == CV_EVENT_LBUTTONDOWN)
+    if (event == cv::EVENT_LBUTTONDOWN)
     {
         cv::Point seed = cv::Point(x,y);
         cv::floodFill(image, Mask, seed,
